@@ -11,7 +11,7 @@ let maskedWord = chosenWord.replace(regex, '_ ')
 
 // Track guessed letters and remaining attempts
 var guessedLetters = [];
-var attempts = 1;
+var attempts = 10;
 var guessedLetters
 // Log the chosen word for debugging
 console.log("Chosen word:", chosenWord, chosenWord.length);
@@ -73,4 +73,5 @@ window.addEventListener("keydown", function (event) {
   } else {
     console.log("Please press a valid letter (A–Z).");
   }
+
 });
